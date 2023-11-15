@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>QuesThor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/bootstrap.css" media="all">
+    <link rel="stylesheet" href="static/css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <div class="container-fluid">
+                <div class="col-2">
+                    <a class="navbar-brand footer-title" style="margin-left: 60px" href="#">QuesThor</a>
+                </div>
+
+                <div class="col-7 collapse navbar-collapse" id="navbarCollapse">
+                    <form class="d-flex" role="search">
+                        <input style="width:500px" class="form-control me-2" type="search" placeholder="Поиск">
+                        <button class="fas fa-search btn btn-primary" type="submit"></button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <div class="row" style="width: auto; margin-left: 30%">
+                        <div class="col-2">
+                            <img src="static/img/pozdn.webp" alt="Logo" width="45" height="45"
+                                class="d-inline-block align-text-top" style="border-radius: 9px; margin-top: 5px">
+                        </div>
+                        <div class="col-8" style="margin-left: 15px">
+                            <a class="header-href" href="#" style=" font-size: 18px;">Dr. Pozdman</a>
+                            <div class="row-cols-3">
+                                <a class="header-href" href="#" style="margin-right: 8px;">Настройки</a>
+                                <a class="header-href" href="#">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+        <div class="container">
+            <div class="row page-content">
+                <div class="col-8">
+                    <h2 class="block-title">Новый вопрос</h2>
+
+                    <form>
+                        
+
+                        <div class="form-error"></div>
+                        <div class="row ask_question">
+                            <div class="col-2" style="margin-right: 10px">
+                                <label for="id_title">Заголовок</label>
+                            </div>
+                            <input type="text" name="title" class="col-9 question-field"
+                                placeholder="Напишите загловок вопроса" required="" id="id_title">
+                        </div>
+
+                        <div class="form-error"></div>
+                        <div class="row ask_question">
+                            <div class="col-2" style="margin-right: 10px">
+                                <label for="id_content">Вопрос</label>
+                            </div>
+                            <textarea name="content" cols="40" rows="10" class="col-9 question-field"
+                                placeholder="Напишите свой вопрос" required=""
+                                id="id_content"></textarea>
+                        </div>
+
+                        <div class="form-error"></div>
+                        <div class="row ask_question">
+                            <div class="col-2" style="margin-right: 10px">
+                                <label for="id_tags">Теги</label>
+                            </div>
+                            <input type="text" name="tags" class="col-9 question-field"
+                                placeholder="Напишите теги к вопросу" required="" id="id_tags">
+                        </div>
+
+                        <input class="btn btn-outline-dark" style="margin-left: 142px" type="submit" value="Задать">
+                    </form>
+                </div>
+                <div class="col-4">
+                    <div class="row info-bar">
+                        <div class="popular-tags">
+                            <h2>Популярные теги</h2>
+                            <div class="popular-tags-list">
+                                <span class="btn btn-danger tag-btn">Крым</span>
+                                <span class="btn btn-primary tag-btn">Python</span>
+                                <span class="btn btn-info tag-btn">Технопарк</span>
+                                <span class="btn btn-outline-danger tag-btn">Эксель</span>
+                                <span class="btn btn-secondary tag-btn">Django</span>
+                                <span class="btn btn-primary text-dark tag-btn">Mail.Ru</span>
+                                <span class="btn btn-warning tag-btn">Voloshin</span>
+                                <span class="btn btn-outline-dark tag-btn">Мстители</span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="best-members">
+                            <h2>Лучшие пользователи</h2>
+                            <ol class="members">
+                                <li class="list-members-item"><a href="#">Шаман</a></li>
+                                <li class="list-members-item"><a href="#">Окси</a></li>
+                                <li class="list-members-item"><a href="#">Dr. Pozdman</a></li>
+                                <li class="list-members-item"><a href="#">Babangida</a></li>
+                                <li class="list-members-item"><a href="#">В. Питун</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

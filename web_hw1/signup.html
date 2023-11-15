@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>QuesThor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/bootstrap.css" media="all">
+    <link rel="stylesheet" href="static/css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <div class="container-fluid">
+                <div class="col-2">
+                    <a class="navbar-brand footer-title" style="margin-left: 60px" href="#">QuesThor</a>
+                </div>
+
+                <div class="col-7 collapse navbar-collapse" id="navbarCollapse">
+                    <form class="d-flex" role="search">
+                        <input style="width:500px" class="form-control me-2" type="search" placeholder="Поиск">
+                        <button class="fas fa-search btn btn-primary" type="submit"></button>
+                    </form>
+                </div>
+                <div class="col-5">
+                    <div class="row" style="width: auto; margin-left: 30%">
+                        <div class="row-cols-3">
+                            <a class="header-href" href="#" style="margin-right: 8px;">Регистрация</a>
+                            <a class="header-href" href="#">Вход</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+        <div class="container">
+            <div class="row page-content">
+                <div class="col-8">
+                    <h2 class="block-title">Новый аккаунт</h2>
+                    <form>
+                        <div class="form-error"></div>
+                        <div class="row ask_question">
+                            <div class="col-3" style="margin-right: 10px">
+                                <label for="id_title">Введите почту</label>
+                            </div>
+                            <input type="text" name="title" class="col-5 question-field"
+                                placeholder="Почта" required="" id="id_title">
+                        </div>
+
+                        <div class="form-error"></div>
+                        <div class="row ask_question">
+                            <div class="col-3" style="margin-right: 10px">
+                                <label for="id_pass_0">Придумайте пароль</label>
+                            </div>
+                            <input type="password" class="col-5 question-field"
+                                 required="" id="id_pass_0"></input>
+                        </div>
+                        <div class="row ask_question">
+                            <div class="col-3" style="margin-right: 10px">
+                                <label for="id_pass_1">Повторите пароль</label>
+                            </div>
+                            <input type="password" class="col-5 question-field"
+                                 required="" id="id_pass_1"></input>
+                        </div>
+                        <div class="form-error"></div>
+                        <div class="row ask_question">
+                            <div class="col-3" style="margin-right: 10px">
+                                <label for="id_nick">Никнейм</label>
+                            </div>
+                            <input type="text" name="tags" class="col-5 question-field"
+                                placeholder="Придмайте ник" required="" id="id_nick">
+                        </div>
+                        <div class="row ask_question">
+                            <div class="col-3" style="margin-right: 10px">
+                                Загрузите фото
+                            </div>
+                            <input type="file" name="image" class="col-5" accept="image/*" id="id_image" style="margin-left: -12px">
+                        </div>
+                        <input class="btn btn-secondary" style="margin-left: 142px" type="submit" value="Создать аккаунт">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+main>.container {
+    padding: 100px 15px 0;
+}
+
+.footer-title {
+    font-size: 25px;
+}
+
+.block-title {
+    margin-bottom: 30px;
+}
+
+.header-href {
+    text-decoration: none;
+    color: #000
+}
+
+.header-href:hover {
+    text-decoration: underline dashed;
+    text-underline-offset: 0.30em;
+    text-underline-position: auto;
+    color: #0837d2
+}
+
+.tag-btn {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.info-bar {
+    margin-left: 100px;
+}
+
+
+.pagination {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*==============*/
+
+.ask_question {
+    margin-bottom: 35px;
+}
+
+.question-field {
+    border: 2px solid black;
+}
+
